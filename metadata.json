@@ -1,0 +1,7 @@
+{
+  "name": "PT Alumindo Glass Solution (AGS)",
+  "description": "Official Tostem Applicator landing page featuring premium Japanese aluminum window and door solutions.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
