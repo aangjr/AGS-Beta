@@ -3,6 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
+import { Logo, LogoTostem  } from "@/assets/images";
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { 
@@ -249,7 +250,7 @@ export default function App() {
   const t = translations[lang];
   const waLink = "https://wa.me/6281180002535";
   const gmapsLink = "https://share.google/YPKWShmcESH0yeqjz";
-  const logoUrl = "https://images.unsplash.com/photo-1621600411666-474470743832?auto=format&fit=crop&q=80&w=200"; // Placeholder for professional logo style
+  const logoUrl = Logo
 
   useEffect(() => {
     const handleScroll = () => {
@@ -485,7 +486,7 @@ export default function App() {
                 transition={{ delay: idx * 0.1 }}
                 className="group cursor-pointer"
               >
-                <div className="relative aspect-[3/4] rounded-2xl overflow-hidden mb-6">
+                <div className="relative aspect-3/4 rounded-2xl overflow-hidden mb-6">
                   <img 
                     src={product.image} 
                     alt={product.name} 
@@ -654,7 +655,7 @@ export default function App() {
           <div className="mt-12 pt-8 border-t border-gray-200 flex justify-center items-center gap-8 opacity-50 grayscale">
             <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-gray-400">Official Partner of</span>
             <img 
-              src="https://www.tostemindonesia.com/assets/images/logo.png" 
+              src={LogoTostem} 
               alt="Tostem Logo" 
               className="h-6"
               onError={(e) => (e.currentTarget.style.display = 'none')}
